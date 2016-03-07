@@ -12,7 +12,7 @@ plot(cpuBusy, type='b', xlab="Time", ylab="CPU Busy Time", main="My second CPU g
 x <- c(rep(1:length(cpuBusy)))
 y <- lm(cpuBusy ~ x)
 
-abline(y) 
+abline(y, col="red") 
 
 
 
