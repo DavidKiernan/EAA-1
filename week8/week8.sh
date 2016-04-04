@@ -54,7 +54,7 @@ if [ -d "$OUTPUTLOC.backup" ]
   then
     echo "Backup directory exists";
   else
-    echo "Directory doesn't exist";
+    echo "Backup directory doesn't exist";
     mkdir "$OUTPUTLOC.backup";
 
     # Do a check for error code
