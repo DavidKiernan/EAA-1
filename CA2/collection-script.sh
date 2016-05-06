@@ -3,6 +3,10 @@
 COMMAND="loadtest";
 SYNTHF="synthetic.dat";
 FILE="mp-out.out";
+OUTFILE="results.dat";
+
+#Prep results
+echo "C0  N  IDLE" > $OUTFILE;
 
 #Do loop
 for i in {1..10}
@@ -28,7 +32,11 @@ for i in {1..10}
     echo "COUNT: $COUNT";
 
     # Get avg idle
-    AVG=tail $FILE | awk 'END{print $NF}'
+    AVG=`tail $FILE | awk 'END{print $NF}'`
+    echo "AVG $AVG";
+
+    # Output
+    echo "$COUNT  $i  $AVG" >> $OUTFILE
 
 done
 
