@@ -6,7 +6,7 @@ FILE="mp-out.out";
 OUTFILE="results.dat";
 
 #Prep results
-echo "C0  N  IDLE" > $OUTFILE;
+echo "C0 N IDLE" > $OUTFILE;
 
 #Do loop
 for i in {1..10}
