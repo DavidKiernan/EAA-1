@@ -1,5 +1,5 @@
 Linux 4.2.8-300.fc23.x86_64 (localhost.localdomain) 	06/05/16 	_x86_64_	(1 CPU)
 
-13:37:16     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
-13:37:26     all   58.65    0.00    0.40    0.20    0.00    0.00    0.00    0.00    0.00   40.75
-Average:     all   58.65    0.00    0.40    0.20    0.00    0.00    0.00    0.00    0.00   40.75
+13:47:30     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+13:47:40     all   59.43    0.00    0.20    0.00    0.00    0.00    0.00    0.00    0.00   40.36
+Average:     all   59.43    0.00    0.20    0.00    0.00    0.00    0.00    0.00    0.00   40.36

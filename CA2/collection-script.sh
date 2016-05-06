@@ -11,9 +11,6 @@ echo "C0  N  IDLE" > $OUTFILE;
 #Do loop
 for i in {1..10}
   do
-    #Remove file
-    rm $SYNTHF
-
     #Run loadtest
     echo "Running loadtest";
 	
@@ -36,7 +33,7 @@ for i in {1..10}
     echo "AVG $AVG";
 
     # Output
-    echo "$COUNT  $i  $AVG" >> $OUTFILE
+    echo "$COUNT"  "$i"  "$AVG" >> $OUTFILE
 
 done
 
