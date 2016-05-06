@@ -9,7 +9,7 @@ OUTFILE="results.dat";
 echo "C0 N IDLE" > $OUTFILE;
 
 #Do loop
-for i in {1..10}
+for i in {1..50}
   do
     #Run loadtest
     echo "Running loadtest";
