@@ -1,13 +1,16 @@
 #Read in data from results.dat
 data<-read.table("results.dat", header=TRUE, sep=" ")
 
-#Convert to utilisation
-data.busy<-100 - data$IDLE
+#Convert to busy time
+data.busy<-100 - data$IDLE;
 
-#Calculate throughput
-data.throughput<-data$C0/5;
+#Calculate utilisation = busy/time
+data.util<-data.busy/10
 
-#Calculate service demand
+#Calculate throughput = tasks completed/time
+data.throughput<-data$C0/10;
+
+#Calculate service demand = utilisation/throughput
 data.servicedemand<-data.util/data.throughput
 
 #Calculate interactive response time R = M/X0 - Z
