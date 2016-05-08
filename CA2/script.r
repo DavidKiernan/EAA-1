@@ -5,7 +5,7 @@ data<-read.table("results.dat", header=TRUE, sep=" ")
 data.busy<-100 - data$IDLE;
 
 #Calculate utilisation = busy/time
-data.util<-data.busy/10
+data.util<-data.busy/100
 
 #Calculate throughput = tasks completed/time
 data.throughput<-data$C0/10;
@@ -13,8 +13,8 @@ data.throughput<-data$C0/10;
 #Calculate service demand = utilisation/throughput
 data.servicedemand<-data.util/data.throughput
 
-#Calculate interactive response time R = M/X0 - Z
-#data.response = data$M/data.throughput - Z;
+#Calculate residence time
+data.residence<-data$N/data.throughput
 
 png("NvsUi");
 	#Build plot N vs Ui
